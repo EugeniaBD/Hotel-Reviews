@@ -60,9 +60,9 @@ try:
 
 except FileNotFoundError:
     
-    tui.display_error('File not found. Please check the file path and try again.')
+    tui.error('File not found. Please check the file path and try again.')
 except:
-    tui.display_error('An error occurred while loading the file. Please check the file format and try again.')
+    tui.error('An error occurred while loading the file. Please check the file format and try again.')
 
 
 
@@ -192,7 +192,7 @@ except:
         # Task 27: If the user selected an invalid option then use the appropriate function of the
         # module tui to display an error message
         if tui.selected_option not in valid_options:
-            tui.display_error("Invalid option selected")
+            tui.error("Invalid option selected")
 
     
 
